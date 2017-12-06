@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>I did not forget your birthday...</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Unica+One" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Credits to Made by Made, First Aid Kit, Yu Luck, Iconic, Morten Halvdrsen, Mello, Zidney, Eduard Alexandru, Setyo Ari Wibowo, Bomsymbol, Claray Joy, Agne Alesiute, Myles McCoy, Juraj Sedlak, ARtem Kovyazin, Celeste Njoo, and Mooms from Noun Projects for the icons used -->
+</head>
+<body>
+    <header class='mainHeader'>
+        <div class="wrapper">
+            <h1 class="mainTitle">'I <span>did not</span> forget your birthday...'<br/>Gift Generator</h1>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="wrapper">
+                <p class="aboutText">So you've made a boo-boo by forgetting about getting a birthday present for that special someone. Don't show up empty-handed! Answer the questions below for great (or questionable) gift ideas: </p>
+            </div>
+        </section>
+        <section class="quizForm">
+            <div class="wrapper">
+                <form action="">
+                    <fieldset class="location">
+                        <p class="quizQuestion">What kind of retail outlet is most convenient for you?</p>
+                        <div class="formAnswers retailAnswers">
+                            <div class="retailQuestions">
+                                <input type="radio" name="retailOutlet" id="drugstore" value="drugstore"required="true" class="retailOutlet">
+                                <label for="drugstore">
+                                A drugstore</label>
+                            </div>
+                            <div class="retailQuestions">
+                                <input type="radio" name="retailOutlet" value="groceryStore" id="groceryStore" required="true" class="retailOutlet">
+                                <label for="groceryStore">A grocery store</label>
+                            </div>
+                            <div class="retailQuestions">
+                                <input type="radio" name="retailOutlet" value="noStore" id="noStore" required="true" class="retailOutlet">
+                                <label for="noStore">There's absolutely nothing</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="season">
+                        <p class="quizQuestion">What season is it?</p>
+                        <div class="formAnswers seasonAnswers">
+                            <div class="seasonQuestions">
+                                <input type="radio" name="season" value="winter" id="winter" required="true" class="season">
+                                <label for="winter">Winter</label>
+                            </div>
+                            <div class="seasonQuestions">
+                                <input type="radio" name="season" value="spring" id="spring" required="true" class="season">
+                                <label for="spring">Spring</label>
+                            </div>
+                            <div class="seasonQuestions">
+                                <input type="radio" name="season" value="summer" id="summer" required="true" class="season">
+                                <label for="summer">Summer</label>
+                            </div>
+                            <div class="seasonQuestions">
+                                <input type="radio" name="season" value="fall" id="fall" required="true" class="season">
+                                <label for="fall">Fall</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="investment">
+                        <p class="quizQuestion">How invested are you in this relationship?</p>
+                        <div class="formAnswers investmentAnswers">
+                            <div class="investmentRadio">
+                                <input type="radio" name="relationshipInvestment" value="yes" id="yes" required="true" class="relationshipInvestment">
+                                <label for="yes">It's very important to me!</label>
+                            </div>
+                            <div class="investmentRadio">
+                                <input type="radio" name="relationshipInvestment" value="maybe" id="maybe" required="true" class="relationshipInvestment">
+                                <label for="maybe">Meh, it's ok.</label>
+                            </div>
+                            <div class="investmentRadio">
+                                <input type="radio" name="relationshipInvestment" value="no" id="no" required="true" class="relationshipInvestment">
+                                <label for="no">Let's be honest, I don't care.
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="friendOrPartner">
+                        <p class="quizQuestion">What is your relationship to the birthday person?</p>
+                        <div class="formAnswers relationAnswers">
+                            <div class="relationQuestions">
+                                <input type="radio" name ="relationship" value="friend" id="friend" required="true" class="relationship">
+                                <label for="friend">They're my friend!</label>
+                            </div>
+                            <div class="relationQuestions">
+                                <input type="radio" name="relationship" value="partner" id="partner" required="true" class="relationship">
+                                <label for="partner">They're my partner (or something like that)</label>
+                            </div>
+                        </div>
+                        <div class="submitContainer iradio">
+                            <input type="submit" value="Gimme a gift!" class="submit">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="results">
+            <div class="wrapper">
+                <header class="resultsHeader">
+                    <h1 class="giftResponse"></h1>
+                </header>
+                <section class="resultsDetails">
+                    <div class="resultsContents">
+                    </div>
+                    <p class="resultsCopy"></p>
+                </section>
+                <section class="return">
+                    <p><a href="" class="returnButton">Return to Quiz</a></p>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a>
+    </footer>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

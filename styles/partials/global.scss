@@ -1,0 +1,51 @@
+/* GLOBAL STYLES */
+$primary-text:"Barlow Semi Condensed", sans-serif;
+$secondary-text:"Unica One", "Barlow Semi Condensed", sans-serif;
+$primary-color: rgb(65, 64, 64);
+$secondary-color: rgba(248, 245, 245, 0.95);
+$tertiary-color: #AFEEEE;
+$accent-color: rgb(124, 122, 122);
+
+body {
+    font-size: 62.5%;
+    background-image: url('../images/backgroundcupcake3.png');
+    background-position: top;
+    background-attachment: fixed;
+    background-color: rgba(250, 200, 34, 0.5);
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px 0;
+    font-family: $secondary-text;
+    margin: 30px 0 10px 0;
+    color: $primary-color;
+    font-size: 1.8rem;
+    background: $secondary-color;
+    border: 2px solid $accent-color;
+    border-radius: 5px;
+}
+
+p {
+    font-family: $primary-text;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+form {
+    background: $secondary-color;
+    padding: 10px 5px;
+    border: 2px solid $accent-color;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
